@@ -1,0 +1,363 @@
+#Assignment 1, Cloud Computing
+Aizere Saparova
+
+Exercise 1: Understanding Cloud Computing Models
+1. Objective: Explore different cloud computing models and understand their key
+differences.
+2. Steps:
+○ Research the three primary cloud service models: Infrastructure as a Service
+(IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+Answer:
+Infrastructure-as-a-Service (IaaS): A set of raw IT resources offered to the user by the cloud service provider. They can be used to virtualise an infrastructure, or for resource-intensive projects — i.e. machine learning, big data, hosting, etc.
+Platform-as-a-Service (PaaS): A platform that a provider offers to its customers via the internet. It enables teams — especially developers — to build applications and software on a solution without having to maintain it. Some applications support a wide variety of programming languages, which means they deliver more flexibility than an application hosted on a local infrastructure.
+Software-as-a-Service (SaaS): This is the most popular cloud service. It is software that runs on a provider’s infrastructure. The user pays for the license, but does not manage the data storage or physical hardware maintenance.
+
+○ Create a table comparing these models in terms of control, flexibility, and use
+cases.
+Answer: 
+
+Model
+Control Level
+Flexibility
+Use Cases
+IaaS (Infrastructure as a Service)
+High
+High
+Ideal for businesses that prefer to handle their own software applications, data management, middleware, and operating systems without worrying about the underlying hardware and networking infrastructure. This setup is typically used for creating virtual data centers, running complex software applications, and ensuring business continuity through disaster recovery solutions.
+PaaS (Platform as a Service)
+Medium
+Medium
+This solution is well-suited for developers aiming to create applications without managing the underlying infrastructure. It's typically used in various settings, such as development frameworks, analytics platforms, or business intelligence tools. Additionally, it plays a critical role in web hosting services, allowing developers to focus on building their solutions without the need to handle servers or other infrastructure components. It's a go-to choice when efficiency and scalability are priorities, making development faster and simpler
+SaaS (Software as a Service)
+Low
+Low
+Best for both end-users and businesses that want ready-to-go tools without the hassle of managing the backend. It’s commonly used for things like email services, customer relationship management (CRM) systems, and collaboration tools. The appeal here is simplicity – you get a complete, functional product right out of the box, so there's no need to worry about servers, updates, or technical maintenance. It saves time and effort, letting users focus on their work instead of the tech behind it.
+
+
+○ Identify examples of services offered by Google Cloud Platform (GCP) under
+each model.
+Answer:
+Infrastructure as a Service (IaaS)
+Compute Engine: Virtual machines for running applications.
+Cloud Storage: Object storage for storing files of any size.
+Cloud SQL: Managed relational database service.
+Cloud Bigtable: NoSQL database for large-scale, high-performance applications.
+Virtual Private Cloud (VPC): Network infrastructure for creating private networks.
+Platform as a Service (PaaS)
+App Engine: Fully managed platform for building and deploying scalable web applications.
+Cloud Functions: Serverless compute platform for executing code in response to events.
+Cloud Run: Serverless platform for running containerized applications.
+Cloud Dataflow: Fully managed service for data processing and analysis.
+Software as a Service (SaaS)
+Google Workspace: Suite of productivity tools, including Gmail, Calendar, Docs, Sheets, and Slides.
+Google Cloud Search: Enterprise search service.
+Google Maps Platform: API for integrating maps and location-based services into applications.
+Google Analytics: Web analytics service.
+Google Marketing Platform: Suite of marketing tools, including AdWords, DoubleClick, and Analytics 360.
+3. Questions:
+○ What are the main differences between IaaS, PaaS, and SaaS?
+Answer:
+
+Feature
+IaaS
+PaaS
+SaaS
+Control
+High
+Medium
+Low
+Management
+Operating system, applications, data
+Applications, data
+None
+Cost
+Variable (based on usage)
+Variable (based on usage)
+Fixed subscription
+Flexibility
+High
+Medium
+Low
+Time to market
+Longer
+Shorter
+Fastest
+
+
+○ Which GCP services fall under each of these models?
+Infrastructure as a Service (IaaS):
+Compute Engine: Virtual machines for running applications.
+Cloud Storage: Object storage for storing files of any size.
+Cloud SQL: Managed relational database service.
+Cloud Bigtable: NoSQL database for large-scale, high-performance applications.
+Virtual Private Cloud (VPC): Network infrastructure for creating private networks.
+Platform as a Service (PaaS):
+App Engine: Fully managed platform for building and deploying scalable web applications.
+Cloud Functions: Serverless compute platform for executing code in response to events.
+Cloud Run: Serverless platform for running containerized applications.
+Cloud Dataflow: Fully managed service for data processing and analysis.
+Software as a Service (SaaS):
+Google Workspace: Suite of productivity tools, including Gmail, Calendar, Docs, Sheets, and Slides.
+Google Cloud Search: Enterprise search service.
+Google Maps Platform: API for integrating maps and location-based services into applications.
+Google Analytics: Web analytics service.
+Google Marketing Platform: Suite of marketing tools, including AdWords, DoubleClick, and Analytics 360.
+
+
+Answer:
+○ Provide a real-world example where each cloud service model might be the most
+appropriate choice.
+Answer:
+IaaS
+Google Cloud Platform (GCP): Used by many companies for infrastructure, including Kaspi.kz, Chocofood, TechOrda, Halyk Bank, Tengribank, Astana Hub, Ministry of Digital Development, Tengri News, Kazakhfilm, Nazarbayev University, and International Kazakh-Turkish University.
+SaaS
+Google Workspace: Used by many companies, including TechOrda, Halyk Bank, Tengribank, Astana Hub, Ministry of Digital Development, Tengri News, Kazakhfilm, Nazarbayev University, and International Kazakh-Turkish University.
+Google Maps API: Used by Chocofood.
+Google Analytics: Used by Chocofood, Tengri News, and potentially others.
+PaaS
+Google App Engine: Potentially used by companies for building and deploying web applications, though not explicitly mentioned in the examples.
+Cloud Functions: Could be used for serverless functions, but it's not directly mentioned.
+
+
+
+Exercise 2: Exploring Google Cloud Platform's Core Services
+1. Objective: Get acquainted with the core services provided by Google Cloud Platform.
+2. Steps:
+○ Access the Google Cloud Console and navigate to the list of GCP services.
+Answer:
+
+○ Explore and describe the purpose of the following core services:
+■ Compute Engine
+■ Google Kubernetes Engine (GKE)
+■ App Engine
+■ Cloud Storage
+■ BigQuery
+Answer:
+■ Compute Engine - provides virtual machines (VMs) for running applications in the cloud.
+■ Google Kubernetes Engine (GKE)- a managed Kubernetes service for deploying, managing, and scaling containerized applications.
+■ App Engine- a fully managed platform for building and deploying scalable web applications.
+■ Cloud Storage- a highly scalable object storage solution for storing and retrieving data of any size.
+■ BigQuery- a fully managed, serverless data warehouse for large-scale data analysis and querying.
+
+○ For each service, identify a potential use case in a business scenario.
+Answer:
+Compute Engine
+a financial institution can use Compute Engine to host a trading platform, allowing for scalable and reliable execution of trades.
+Google Kubernetes Engine (GKE)
+a bank can use GKE to deploy a microservices-based application for fraud detection, enabling faster and more efficient analysis of transaction data.
+App Engine
+a fintech startup can use App Engine to build a mobile payment application, leveraging its scalability and ease of development.
+Cloud Storage
+an insurance company can use Cloud Storage to store large volumes of customer data, including policy documents, claims information, and analytics results.
+BigQuery
+a hedge fund can use BigQuery to analyze vast datasets of financial market data, identify patterns, and make informed investment decisions.
+
+
+
+3. Questions:
+○ What is the primary use case of Compute Engine?
+Answer:
+Compute Engine is primarily used to provide virtual machines (VMs) for running applications in the cloud.
+
+○ How does Google Kubernetes Engine (GKE) simplify the management of
+containerized applications?
+Answer:
+Google Kubernetes Engine (GKE) simplifies the management of containerized applications by automating many of the complex tasks involved in running and scaling containerized workloads. some benefits: container orchestratio, cluster management, integration with Google Cloud Platform.
+
+○ What advantages does Cloud Storage offer for data management?
+Answer:
+Cloud Storage provides a flexible, scalable, and secure solution for managing data in the cloud. Advantages of data management: scalability, durability, accessibility, cost-efficiency, encryption, security. 
+
+○ Why would a business choose BigQuery for their data analysis needs?
+Answer:
+BigQuery is a powerful and efficient tool for businesses that need to analyze large datasets quickly and easily. Its scalability, performance, and integration capabilities make it a popular choice for data analysis and business intelligence applications.
+
+Exercise 3: Creating and Managing Virtual Machines with Compute Engine
+1. Objective: Learn how to create, manage, and interact with virtual machines (VMs) using
+Compute Engine.
+2. Steps:
+○ In the Google Cloud Console, navigate to Compute Engine and create a new VM
+instance.
+Answer:
+
+○ Configure the VM with specific parameters, such as the machine type, region,
+and operating system.
+Answer:
+
+○ Connect to the VM using SSH and install a basic web server (e.g., Apache or
+Nginx).
+Answer:
+
+○ Stop, start, and delete the VM through the console.
+Answer:
+
+
+
+
+
+3. Questions:
+○ What steps did you follow to create the VM?
+Answer:
+log in to the google cloud console  
+navigate to compute engine: select "vm instances"
+create a vm instance: click the "create" button.
+choose a vm name
+select a zone
+configure machine type
+choose boot disk
+configure networking
+set firewall rules
+create the vm
+
+○ How did you connect to the VM, and what commands did you use to install the
+web server?
+Answer:
+use SSH (Secure Shell)
+○ What happens to the VM and its data when it is stopped versus when it is
+deleted?
+Answer:
+differences when I stop and delete VM
+Feature
+Stopping
+Deleting
+Data Preservation
+Yes
+No
+Billing
+Paused
+Stopped
+Reversibility
+Yes
+No
+
+
+
+Exercise 4: Deploying a Containerized Application on Google Kubernetes
+Engine (GKE)
+1. Objective: Understand how to deploy and manage containerized applications using
+Google Kubernetes Engine.
+2. Steps:
+○ Create a simple Docker container for a web application.
+Answer:
+
+○ Push the container image to Google Container Registry (GCR).
+Answer: 
+○ Create a GKE cluster in Google Cloud Console.
+Answer:  
+○ Deploy the containerized application to the GKE cluster.
+Answer:
+○ Expose the application to the internet and verify its accessibility.
+Answer:
+
+3. Questions:
+○ How did you create and push the Docker container to GCR?
+Answer:
+Create a Google Cloud account
+Explore the console
+Launch instances
+
+
+○ What steps were involved in setting up the GKE cluster?
+Answer:
+create a project
+enable the kubernetes engine api
+choose a zone
+configure the cluster
+create the cluster
+
+○ How did you verify that your application was successfully deployed and
+accessible?
+Answer: 
+check logs: use kubectl logs.
+access the application: use public ip or kubectl port-forward.
+monitor metrics: use cloud monitoring.
+check kubernetes status: use kubectl get pods.
+test functionality: manually test your application.
+
+Exercise 5: Storing and Accessing Data in Google Cloud Storage
+1. Objective: Learn how to store, manage, and access data using Google Cloud Storage.
+2. Steps:
+○ Create a new Cloud Storage bucket in the Google Cloud Console.
+Answer:
+
+○ Upload various types of files (e.g., text, images, videos) to the bucket.
+Answer:
+
+
+○ Set access permissions for the bucket and test public and private access to the
+files.
+Answer:
+
+○ Use the Cloud Console to download, move, and delete files in the bucket.
+Answer:
+
+3. Questions:
+○ How do you create a Cloud Storage bucket, and what options are available
+during setup?
+Answer:
+log in to google cloud console
+navigate to cloud storage
+click "create bucket"
+name your bucket and choose a location
+set storage class, access control, and other options
+click "create"
+
+○ What are the differences between setting a bucket to public versus private?
+Answer:
+public for sharing, private for security
+
+
+Feature
+Public
+Private
+Visibility
+Public
+Private
+Usage
+Share data
+Store sensitive data
+Access Control
+Basic
+Strict
+
+
+○ How can you manage access permissions for individual files in a bucket?
+Answer: Set bucket-level permissions.
+
+Exercise 6: Analyzing Data with BigQuery
+1. Objective: Perform data analysis tasks using BigQuery.
+2. Steps:
+○ Access BigQuery in the Google Cloud Console.
+
+○ Create a dataset and table by importing a sample dataset provided by Google.
+Answer:
+
+○ Write and execute SQL queries to perform basic data analysis, such as filtering,
+aggregation, and sorting.
+Answer:
+
+○ Visualize the results using Google Data Studio or another visualization tool.
+Answer:
+
+
+3. Questions:
+○ What steps did you take to create a dataset and table in BigQuery?
+Answer:
+log in to the google cloud console
+navigate to bigquery
+create a dataset
+name your dataset
+choose a location
+create the dataset
+create a table
+name your table
+define the schema
+
+
+○ How did you write and execute SQL queries in BigQuery?
+Answer:
+through navigating to table explorer in BigQuery
+○ 
+Answer:
+customer behaviour 
+
