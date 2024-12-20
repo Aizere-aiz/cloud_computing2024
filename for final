@@ -1,0 +1,146 @@
+Retrieve All Products
+Method: GET
+Endpoint URL: /api/products
+Description: When I call this endpoint, I get a list of all products currently recorded in the inventory, including their names, descriptions, quantities, and prices. It’s useful for generating product catalogs or checking stock levels at a glance.
+GET /api/products
+Example Response:
+json
+[
+  {
+    "id": 101,
+    "name": "Product A",
+    "description": "High-quality widget",
+    "quantity": 150,
+    "price": 19.99,
+    "location_id": 1
+  },
+  {
+    "id": 102,
+    "name": "Product B",
+    "description": "Durable gadget",
+    "quantity": 75,
+    "price": 29.99,
+    "location_id": 2
+  }
+]
+Retrieve a Single Product
+Method: GET
+Endpoint URL: /api/products/{id}
+Description: By specifying a product ID, I can fetch detailed information about a single product. This is handy when I need to drill down into specifics about a particular item.
+Example Request:
+bash
+Copy code
+GET /api/products/101
+
+Example Response:
+json
+Copy code
+{
+  "id": 101,
+  "name": "Product A",
+  "description": "High-quality widget",
+  "quantity": 150,
+  "price": 19.99,
+  "location_id": 1,
+  "created_at": "2024-11-01T10:00:00Z",
+  "updated_at": "2024-12-01T09:30:00Z"
+}
+
+
+Create a New Product
+Method: POST
+Endpoint URL: /api/products
+Description: When I want to add a new product to the inventory, I make a POST request to this endpoint with the product details in the request body. This automates the process of expanding the product catalog.
+Example Request:
+json
+Copy code
+POST /api/products
+{
+  "name": "Product C",
+  "description": "Lightweight component",
+  "quantity": 200,
+  "price": 9.99,
+  "location_id": 3
+}
+
+Example Response:
+json
+Copy code
+{
+  "id": 103,
+  "message": "Product created successfully"
+}
+
+
+Update an Existing Product
+Method: PUT
+Endpoint URL: /api/products/{id}
+Description: If I need to update a product’s details—like adjusting the price or changing the location—I use the PUT method to modify the existing record.
+Example Request:
+json
+Copy code
+PUT /api/products/101
+{
+  "price": 17.99,
+  "quantity": 160
+}
+
+Example Response:
+json
+Copy code
+{
+  "id": 101,
+  "message": "Product updated successfully"
+}
+
+
+Place an Order
+Method: POST
+Endpoint URL: /api/orders
+Description: This endpoint allows me or any authenticated user to create a new order. It records the product requested, quantity, and associates the order with a user.
+Example Request:
+json
+Copy code
+POST /api/orders
+{
+  "user_id": 1,
+  "product_id": 101,
+  "quantity": 5
+}
+
+Example Response:
+json
+Copy code
+{
+  "order_id": 5001,
+  "status": "confirmed",
+  "message": "Order placed successfully"
+}
+
+
+Check Sales Reports
+Method: GET
+Endpoint URL: /api/reports/sales?start_date={start}&end_date={end}
+Description: I use this endpoint to generate a sales report over a given time period. It returns aggregated sales data, allowing me to analyze revenue and product performance.
+Example Request:
+bash
+Copy code
+GET /api/reports/sales?start_date=2024-11-01&end_date=2024-11-30
+
+Example Response:
+json
+Copy code
+[
+  {
+    "product_id": 101,
+    "sales_date": "2024-11-15",
+    "quantity_sold": 30,
+    "total_revenue": 599.70
+  },
+  {
+    "product_id": 102,
+    "sales_date": "2024-11-20",
+    "quantity_sold": 20,
+    "total_revenue": 599.80
+  }
+]
